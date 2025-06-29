@@ -1,6 +1,7 @@
 from flask import render_template, Flask, request
 import firebase_admin
 from firebase_admin import credentials, firestore
+import os
 app = Flask(__name__)
 
 cred = credentials.Certificate("chave-firebase.json")
